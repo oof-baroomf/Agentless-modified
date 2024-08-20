@@ -489,7 +489,7 @@ Return just the locations.
                     "prompt_tokens": num_tokens_from_messages(message, self.model_name),
                 },
             }
-        return [], {"raw_output_loc": ""}, traj
+            return [], {"raw_output_loc": ""}, traj
         if mock:
             self.logger.info("Skipping querying model since mock=True")
             traj = {
